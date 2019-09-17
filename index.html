@@ -1,0 +1,56 @@
+ <meta charset="utf-8">
+<!DOCTYPE html>
+<html>
+<head>
+   <title> 평당계산</title>
+   <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Nanum+Brush+Script&display=swap" rel="stylesheet">
+   <style type="text/css">
+
+   	input {background-color: white;
+				border: none;
+				padding: 10px;
+				color: gray;
+				font-size: 20px;
+				margin-top: 10px;
+				border-radius: 5px;
+				box-shadow: 3px 3px 3px gray;
+				text-align: center; }
+   	
+   	#myinput{background:yellow; font-size:50px; padding: 50px; border:none; box-shadow: 0px 0px 80px green inset; border-radius: 18px;}
+
+   h1{font-size: 50px;text-align: center; padding-top: 80px;font-family: 'Nanum Brush Script', cursive;}
+		h2{font-size: 20px;text-align: center;font-family :'Do Hyeon', sans-serif; }
+		p{font-size: 20px;text-align: center;font-family: 'Nanum Brush Script', cursive;}
+	    div{border: none; background-color: lightblue; padding-top: 50px; padding-right: 50px; padding-bottom: 50px; padding-left: 50px; text-align: center; font-size: 30px; font-family: 'Nanum Brush Script', cursive;}
+	    body{background-color: #D19D4A; font-family:  margin : 100px;}
+	</style>
+</head>
+<body>
+
+	<br>
+	<h1> 평당 계산기</h1>
+	<h2>(평/제곱미터)</h2>
+	<div>
+		<input type="number" id="phyung" align="center" placeholder="우리집 평 수">
+		<br>
+		<br>
+		<input type="button" align="center" value="확인" id="button">
+	</div>
+	<br><br>
+	<div id="monitor" align="center">우리집 크기는 얼마?</div>	
+
+	<script type="text/javascript">
+		button.onclick = function(){
+			var py = phyung.value;
+			var total = py*3.305;	
+			monitor.innerHTML = "당신의 집은 약 < " + total + " >제곱미터 입니다.";
+		}
+	</script>
+
+
+
+
+</body>
+<footer><p style="color: gray; text-align: center; padding-top: 30px; font-size: 10pt;">copyright ⓒ20190917 Yujung Shin</p></footer>
+</html>
